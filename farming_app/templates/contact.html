@@ -1,0 +1,119 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+   <!-- Page Header Start -->
+   <div class="container-fluid page-header wow fadeIn" data-wow-delay="0.1s">
+    <div class="container">
+        <h1 class="display-3 mb-3 animated slideInDown">Contact Us</h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a class="text-body" href="#">Home</a></li>
+                <li class="breadcrumb-item"><a class="text-body" href="#">Pages</a></li>
+                <li class="breadcrumb-item text-dark active" aria-current="page">Contact Us</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<!-- Page Header End -->
+    <!-- Contact Start -->
+     <!-- {% if name %} -->
+     <!-- <center>
+     <h2>Thanks {{name}}</h2>
+     <p>We received your email and will respond shortly</p>
+    </center> -->
+    <!-- {% else %} -->
+    
+    <div class="container-xxl py-6">
+        <div class="container">
+            <div class="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <h1 class="display-5 mb-3">Contact Us</h1>
+                <p>Is there something you wish to know about us, don't hesitate to drop your message below and we shall get back to you.</p>
+            </div>
+            <div class="row g-5 justify-content-center">
+                <div class="col-lg-5 col-md-12 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="bg-primary text-white d-flex flex-column justify-content-center h-100 p-5">
+                        <h5 class="text-white">Call Us</h5>
+                        <p class="mb-5"><i class="fa fa-phone-alt me-3"></i>+237 681 883 30</p>
+                        <h5 class="text-white">Email Us</h5>
+                        <p class="mb-5"><i class="fa fa-envelope me-3"></i>rebeccalacmago@gmail.com</p>
+                        <h5 class="text-white">Office Address</h5>
+                        <p class="mb-5"><i class="fa fa-map-marker-alt me-3"></i>Akwa, Douala, Cameroon</p>
+                        <h5 class="text-white">Follow Us</h5>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-square btn-outline-light rounded-circle me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
+                    <p class="mb-4">Get In Touch   -</p>
+                    <form action="{% url 'contact' %}" method="post">
+                    {% csrf_token %}
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
+                                    <label for="name">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email">
+                                    <label for="email">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
+                                    <label for="subject">Subject</label>
+                                </div>
+                            </div>
+                            <div class="col-12"> 
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a message here" id="message" name="message" style="height: 200px"></textarea>
+                                    <label for="message">Message</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary rounded-pill py-3 px-5" type="submit">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+
+    {% for message in messages %}
+
+        <h3>{{ message }}</h3>
+
+    {% endfor %}
+    </div>
+    <!-- Contact End -->
+
+    <!-- {% endif %} -->
+
+
+    <!-- Google Map Start -->
+    <div class="container-xxl px-0 wow fadeIn" data-wow-delay="0.1s" style="margin-bottom: -6px;">
+            <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7358.801606229182!2d9.702273825642239!3d4.052703892797606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1061125fd8ac86e9%3A0x8c209e5fc42dae26!2sAkwa%2C%20Douala!5e0!3m2!1sfr!2scm!4v1724408270442!5m2!1sfr!2scm" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <!-- Google Map End -->
+
+
+    {% endblock %}
+
+    {% block footer %}
+       {% include 'footer.html' %}
+    {% endblock %}
+    
+    {% block js %}
+    <!-- add any specific javascript here -->
+    {% endblock %}

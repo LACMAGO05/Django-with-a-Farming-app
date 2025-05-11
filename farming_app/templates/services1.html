@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <h1 class="display-3 mb-3 animated slideInDown">Services</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a class="text-body" href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-body" href="#">Pages</a></li>
+                    <li class="breadcrumb-item text-dark active" aria-current="page">Services</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+        <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="about-img position-relative overflow-hidden p-5 pe-0">
+                            <img class="img-fluid w-100" src="{% static 'img/transportation.jpg' %}">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        <h1 class="display-5 mb-4">Transportation Services</h1>
+                        <p class="mb-4">For farmers who have difficulties in getting their products to the market, we offer transportation of farm products to the desired market place of the customer hiring our services.</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Efficient logistics: VegeCameroon provides timely and efficient transportation solutions to move farm products from the field to market.</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Reliable delivery: Our fleet of vehicles ensures that produce reaches its destination in optimal condition, minimizing spoilage and losses.</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Flexible options: We offer customizable transportation services to meet the specific needs of individual farmers, including bulk transportation, small-scale deliveries, and long-distance haulage.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+            <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="about-img position-relative overflow-hidden p-5 pe-0">
+                        <img class="img-fluid w-100" src="{% static 'img/delivery.jpeg' %}">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <h1 class="display-5 mb-4">Delivery of Farm Products</h1>
+                    <p class="mb-4"></p>
+                    <p><i class="fa fa-check text-primary me-3"></i>Export opportunities: We facilitate the export of Cameroonian agricultural products to neighboring countries, expanding market access and generating foreign exchange.
+                        
+                        </p>
+                    <p><i class="fa fa-check text-primary me-3"></i>Quality control: Our rigorous quality control measures ensure that exported products meet international standards and regulations.</p>
+                    <p><i class="fa fa-check text-primary me-3"></i>Market access: VegeCameroon connects farmers with a wide range of customers, including hotels, restaurants, and retailers.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+        <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="about-img position-relative overflow-hidden p-5 pe-0">
+                            <img class="img-fluid w-100" src="{% static 'img/animal-rearing.jpeg' %}">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        <h1 class="display-5 mb-4">Animal Health Services</h1>
+                        <p class="mb-4"></p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Disease prevention: VegeCameroon offers a range of vaccination programs to protect livestock from common diseases and improve their overall health.
+                            
+                            </p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Veterinary care: Our experienced veterinarians provide expert advice and treatment to address animal health issues.</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Biosecurity measures: We implement strict biosecurity protocols to prevent the spread of diseases and protect the health of livestock.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+            <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="about-img position-relative overflow-hidden p-5 pe-0">
+                        <img class="img-fluid w-100" src="{% static 'img/buying.jpeg' %}">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <h1 class="display-5 mb-4">Buying farm products from farmers</h1>
+                    <p class="mb-4"></p>
+                    <p><i class="fa fa-check text-primary me-3"></i>Direct sourcing: VegeCameroon purchases fresh produce directly from farmers, eliminating intermediaries and ensuring fair prices.
+                        
+                        </p>
+                    <p><i class="fa fa-check text-primary me-3"></i>Storage solutions: We provide temporary storage for farmers who lack adequate facilities, preventing losses due to spoilage or pests.</p>
+                    <p><i class="fa fa-check text-primary me-3"></i>Quality assurance: Our team carefully inspects all produce to ensure it meets our high standards of quality and freshness.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+{% endblock %}
+
+{% block footer %}
+   {% include 'footer.html' %}
+{% endblock %}
+
+{% block js %}
+<!-- add any specific javascript here -->
+{% endblock %}

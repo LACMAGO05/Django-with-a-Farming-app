@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <h1 class="display-3 mb-3 animated slideInDown">Testimonial</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a class="text-body" href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-body" href="#">Pages</a></li>
+                    <li class="breadcrumb-item text-dark active" aria-current="page">Testimonial</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+<!-- Testimonial Start -->
+<div class="container-fluid bg-light bg-icon py-6 mb-5">
+    <div class="container">
+        <div class="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+            <h1 class="display-5 mb-3">Customer Review</h1>
+            <p>Hear from the people who know best. Our satisfied customers share their experiences with our farming services. Discover how we've helped them thrive in the agricultural industry.</p>
+        </div>
+        <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+            <div class="testimonial-item position-relative bg-white p-5 mt-4">
+                <i class="fa fa-quote-left fa-3x text-primary position-absolute top-0 start-0 mt-n4 ms-5"></i>
+                <p class="mb-4">I'm so grateful for VegeCameroon. As a small-scale farmer, it's been challenging to get my produce to market. Their transportation services have been a lifesaver. Now, I can reach more customers and sell my crops at a fair price.</p>
+                <div class="d-flex align-items-center">
+                    <img class="flex-shrink-0 rounded-circle" src="{% static 'img/testimonial-1.1.jpg' %}" alt="">
+                    <div class="ms-3">
+                        <h5 class="mb-1">Louis Chi</h5>
+                        <span>Farmer</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-item position-relative bg-white p-5 mt-4">
+                <i class="fa fa-quote-left fa-3x text-primary position-absolute top-0 start-0 mt-n4 ms-5"></i>
+                <p class="mb-4">I own a restaurant and rely on fresh, local produce. VegeCameroon has been consistent in delivering high-quality farm products right to my doorstep. It's made a huge difference in the quality of my dishes.</p>
+                <div class="d-flex align-items-center">
+                    <img class="flex-shrink-0 rounded-circle" src="{% static 'img/testimonial-2.1.jpeg' %}" alt="">
+                    <div class="ms-3">
+                        <h5 class="mb-1">Lacmago Rebecca</h5>
+                        <span>Cook</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-item position-relative bg-white p-5 mt-4">
+                <i class="fa fa-quote-left fa-3x text-primary position-absolute top-0 start-0 mt-n4 ms-5"></i>
+                <p class="mb-4">As a livestock farmer, I'm always concerned about the health of my animals. VegeCameroon's vaccination services have been invaluable. I know that my animals are protected and my business is safe.</p>
+                <div class="d-flex align-items-center">
+                    <img class="flex-shrink-0 rounded-circle" src="{% static 'img/testimonial-3.jpg' %}" alt="">
+                    <div class="ms-3">
+                        <h5 class="mb-1">Lacmago Eldad</h5>
+                        <span>Farmer</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-item position-relative bg-white p-5 mt-4">
+                <i class="fa fa-quote-left fa-3x text-primary position-absolute top-0 start-0 mt-n4 ms-5"></i>
+                <p class="mb-4">From transportation to delivery to vaccinations, VegeCameroon has everything a farmer could ask for. They've made my life so much easier and have helped me grow my business. Thank you VegeCameroon</p>
+                <div class="d-flex align-items-center">
+                    <img class="flex-shrink-0 rounded-circle" src="{% static 'img/testimonial-4.jpg' %}" alt="">
+                    <div class="ms-3">
+                        <h5 class="mb-1">Fatime Rachel</h5>
+                        <span>Farmer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Testimonial End -->
+
+    {% endblock %}
+    {% block footer %}
+       {% include 'footer.html' %}
+    {% endblock %}
+    
+    {% block js %}
+        <!-- add any specific javascript here -->
+    {% endblock %}

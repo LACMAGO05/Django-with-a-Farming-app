@@ -1,0 +1,148 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+ 
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <h1 class="display-3 mb-3 animated slideInDown">About Us</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a class="text-body" href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-body" href="#">Pages</a></li>
+                    <li class="breadcrumb-item text-dark active" aria-current="page">About Us</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="about-img position-relative overflow-hidden p-5 pe-0">
+                        <img class="img-fluid w-100" src="{% static 'img/about1.jpeg' %}">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <h1 class="display-5 mb-4">History of VegeCameroon</h1>
+                    <p class="mb-4">VegeCameroon has been a cornerstone of Cameroonian agriculture since its inception. While the exact date of its founding remains unclear, the company has undoubtedly played a vital role in supporting local farmers and ensuring a steady supply of fresh produce.
+
+                        From its humble beginnings, VegeCameroon has evolved into a comprehensive agricultural services provider. The company’s core mission has always been to empower farmers and improve the overall health and sustainability of the agricultural sector.
+                        
+                        One of VegeCameroon’s most significant contributions has been in the area of transportation. By providing reliable and efficient transportation services, the company has helped farmers get their products to market quickly and at a competitive cost. This has been particularly crucial for small-scale farmers who often lack the resources to transport their produce independently.
+                        
+                        Another key service offered by VegeCameroon is the purchase of farm products. This has been a lifeline for many farmers who struggle to find suitable storage facilities for their produce. By buying directly from farmers, VegeCameroon helps to ensure that their hard work is rewarded and that their products reach consumers in a timely manner.
+                        
+                        In addition to these services, VegeCameroon has also been committed to animal health. By providing vaccinations and disease control measures, the company has helped to protect livestock and ensure the overall well-being of the agricultural sector.
+                        
+                        As VegeCameroon continues to grow and expand its operations, it remains dedicated to its original mission of supporting farmers and promoting sustainable agriculture in Cameroon. The company’s history is a testament to its commitment to excellence and its unwavering dedication to the agricultural community.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+     <!-- Vision and mission End Start -->
+     <div class="container-fluid bg-light bg-icon py-6">
+        <div class="container">
+            <div class="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <h1 class="display-5 mb-3">Our Vision</h1>
+                <p> To be a leading force in sustainable agriculture, empowering Cameroonian farmers and ensuring a thriving food supply for generations to come.</p>
+            </div>
+
+            <!-- mission start -->
+            <div class="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <h1 class="display-5 mb-3">Our Mission</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="bg-white text-center h-100 p-4 p-xl-5">
+                        <img class="img-fluid mb-4" src="{% static 'img/icon-1.png' %}" alt="">
+                        <h4 class="mb-3">Support farmers</h4>
+                        <p class="mb-4">Provide comprehensive services to assist farmers in maximizing their productivity and profitability.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="bg-white text-center h-100 p-4 p-xl-5">
+                        <img class="img-fluid mb-4" src="{% static 'img/icon-2.png' %}" alt="">
+                        <h4 class="mb-3">Promote sustainability</h4>
+                        <p class="mb-4">Foster sustainable agricultural practices that protect the environment and conserve natural resources.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="bg-white text-center h-100 p-4 p-xl-5">
+                        <img class="img-fluid mb-4" src="{% static 'img/icon-3.png' %}" alt="">
+                        <h4 class="mb-3">Ensure food security</h4>
+                        <p class="mb-4">Contribute to food security in Cameroon by ensuring a reliable and affordable supply of fresh, nutritious produce.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Vision and mission End -->
+
+     
+    <!-- Firm Visit Start -->
+    <div class="container-fluid bg-primary bg-icon mt-5 py-6">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-md-7 wow fadeIn" data-wow-delay="0.1s">
+                    <h1 class="display-5 text-white mb-3">Visit Our Firm</h1>
+                    <p class="text-white mb-0">Our farm is dedicated to producing the highest quality, organic produce. Visit us to see firsthand how we cultivate our crops with care and respect for the environment.</p>
+                </div>
+                <div class="col-md-5 text-md-end wow fadeIn" data-wow-delay="0.5s">
+                    <a class="btn btn-lg btn-secondary rounded-pill py-3 px-5" href="{% url 'farm' %}">Visit Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Firm Visit End -->
+
+
+    <!-- Feature Start -->
+    <div class="container-fluid bg-light bg-icon my-5 py-6">
+        <div class="container">
+            <div class="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <h1 class="display-5 mb-3">Our Features</h1>
+                <p>At VegeCameroon, we're passionate about providing the highest quality produce.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="bg-white text-center h-100 p-4 p-xl-5">
+                        <img class="img-fluid mb-4" src="{% static 'img/icon-1.png' %}" alt="">
+                        <h4 class="mb-3">Natural Process</h4>
+                        <p class="mb-4">Our commitment to sustainability is evident in every aspect of our farming practices. We utilize natural processes to nurture our crops, including crop rotation, composting etc.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="bg-white text-center h-100 p-4 p-xl-5">
+                        <img class="img-fluid mb-4" src="{% static 'img/icon-2.png' %}" alt="">
+                        <h4 class="mb-3">Organic Products</h4>
+                        <p class="mb-4">Our organic products are cultivated using methods that prioritize the health of our land, our animals, and our customers. We adhere to strict organic standards, ensuring that our produce is rich in nutrients.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="bg-white text-center h-100 p-4 p-xl-5">
+                        <img class="img-fluid mb-4" src="{% static 'img/icon-3.png' %}" alt="">
+                        <h4 class="mb-3">Biologically Safe</h4>
+                        <p class="mb-4">We prioritize the safety of our products and the well-being of our consumers. Our organic farming practices are designed to minimize the use of harmful chemicals and promote biological diversity.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature End -->
+
+
+        {% endblock %}
+
+       {% block footer %}
+          {% include 'footer.html' %}
+       {% endblock %}
+       
+       {% block js %}
+       <!-- add any specific javascript here -->
+       {% endblock %}

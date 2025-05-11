@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<style>
+    .videos{
+        
+        display: flex;
+        
+    }
+</style>
+
+<br><br><br><br><br><br><br><br>
+
+
+<!-- 
+<video controls>
+    <source src="https://www.youtube.com/watch?v=KtywSB4T8QI">
+
+</video> -->
+
+<div class="videos"> 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LGu9UId-doU?si=RoDgd0xoOyDybA3o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fQ1TlX7oN7A?si=5j3vhsvHbyFIxjpD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BvoKhT-zCxc?si=kHRdnrgwDuzxoNWT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+{% endblock %}
+{% block footer %}
+{% include 'footer.html' %}
+{% endblock %}
+
+{% block js %}
+ <!-- add any specific javascript here -->
+{% endblock %}
